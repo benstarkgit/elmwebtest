@@ -155,17 +155,33 @@
         }
         h1 { font-size: 2rem; }
     }
+    .logo-link {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.logo {
+  width: 32px;  /* match your 8-bit image size */
+  height: 32px;
+  margin-right: 8px;
+  image-rendering: pixelated; /* keeps crisp edges for 8-bit art */
+}
 </style>
 </head>
 <body>
 <div class="backdrop-overlay"></div>
 <header>
+  <a href="home.html" class="logo-link">
+    <img src="assets/web/images/castle.png" alt="Castle Logo" class="logo">
     Game Start
+  </a>
 </header>
 <main>
     <div class="panel">
         <h1>elm<br></h1>
-        <h2>Welcome<br>
+        <h2>Welcome<br><br>
             Begin New Campaign</h2>
         <p class="lead">
             Set your game name and embark on the opening turn.
